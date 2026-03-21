@@ -1,0 +1,22 @@
+name: Build
+on:
+  push:
+    branches-ignore:
+      - '**-wip'
+  pull_request:
+
+jobs:
+  make:
+    runs-on: ubuntu-latest
+    if: (github.event_name == 'push' || github.event.pull_request.head.repo.full_name != github.repository)
+    steps:
+      - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - run: pnpm install --frozen-lockfile
+      - name: Prepack
+        run: pnpm prepack
+      - name: Publish
+        run: pnpm pkg-pr-new publish --package-manager=pnpm --pnpm

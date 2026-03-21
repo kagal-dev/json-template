@@ -1,0 +1,59 @@
+{
+  "name": "@kagal/json-template",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "JSON template engine with shell-style ${var:-default} variable substitution",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kagal-dev/json-template.git"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "clean": "rimraf dist node_modules",
+    "dev": "vitest",
+    "dev:prepare": "unbuild --stub",
+    "lint": "eslint --fix .",
+    "lint:check": "eslint .",
+    "precommit": "run-s build lint typecheck test",
+    "prepack": "eslint --fix package.json && run-s build lint:check typecheck test publint",
+    "prepare": "cross-test -s dist/index.mjs || unbuild --stub",
+    "publint": "publint",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@kagal/cross-test": "^0.1.2",
+    "@poupe/eslint-config": "^0.8.3",
+    "@types/node": "^20.19.37",
+    "eslint": "^9.39.4",
+    "npm-run-all2": "^8.0.4",
+    "pkg-pr-new": "^0.0.65",
+    "publint": "^0.3.18",
+    "rimraf": "^6.1.3",
+    "typescript": "~5.9.3",
+    "unbuild": "3.6.1",
+    "vitest": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "pnpm@10.32.1+sha512.a706938f0e89ac1456b6563eab4edf1d1faf3368d1191fc5c59790e96dc918e4456ab2e67d613de1043d2e8c81f87303e6b40d4ffeca9df15ef1ad567348f2be",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
