@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kagal-dev/json-template.git"
+    "url": "git+https://github.com/kagal-dev/json-template.git"
   },
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
