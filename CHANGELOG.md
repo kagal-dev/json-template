@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Changed
+
+- **scanner**: Expose pre-split dotted path segments on `ScannedExpr`
+  so `compile()` reuses them instead of splitting again
+
 ## [0.1.0] - 2026-03-24
 
 Initial release.

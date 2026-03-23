@@ -158,7 +158,8 @@ template string
      ▼
   scan()           → ScannedExpr[]
                      (phase 1: find expressions,
-                      track string context)
+                      track string context,
+                      pre-split dotted paths)
      │
      ▼
   sentinel replace → modified JSON str
