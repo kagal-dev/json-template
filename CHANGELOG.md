@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-03-24
+
 ### Added
 
 - **ci**: Publish workflow for npm with provenance via GitHub Actions
