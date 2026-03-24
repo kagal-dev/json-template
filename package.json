@@ -4,13 +4,19 @@
   "type": "module",
   "description": "JSON template engine with shell-style ${var:-default} variable substitution",
   "license": "MIT",
+  "homepage": "https://github.com/kagal-dev/json-template#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kagal-dev/json-template.git"
   },
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.mts",
+  "bugs": "https://github.com/kagal-dev/json-template/issues",
+  "keywords": [
+    "json",
+    "json-template",
+    "template-engine",
+    "typescript",
+    "variable-substitution"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.mts",
