@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-03-24
+
+### Added
+
+- **ci**: Publish workflow for npm with provenance via GitHub Actions
+  OIDC trusted publishing on `v*` tag pushes
+
+### Changed
+
+- **scanner**: Expose pre-split dotted path segments on `ScannedExpr`
+  so `compile()` reuses them instead of splitting again
+- **ci**: Skip `pkg-pr-new` preview on tag pushes — the real npm
+  publish handles those
+
 ## [0.1.0] - 2026-03-24
 
 Initial release.

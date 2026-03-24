@@ -1,6 +1,6 @@
 {
   "name": "@kagal/json-template",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "JSON template engine with shell-style ${var:-default} variable substitution",
   "license": "MIT",

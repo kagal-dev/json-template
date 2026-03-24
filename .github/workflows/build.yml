@@ -19,4 +19,5 @@ jobs:
       - name: Prepack
         run: pnpm prepack
       - name: Publish
+        if: "!startsWith(github.ref, 'refs/tags/')"
         run: pnpm pkg-pr-new publish --package-manager=pnpm --pnpm

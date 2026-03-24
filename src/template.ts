@@ -251,7 +251,7 @@ export function compile(template: string, options: CompileOptions = {}): Templat
   const exprs = scan(template);
 
   const variables = exprs.map((expr) => toVariable(template, expr));
-  const segments = exprs.map((expr) => expr.name.split('.'));
+  const segments = exprs.map((expr) => expr.segments);
   const fallbacks = exprs.map((expr) => parseFallback(expr.defaultValue));
 
   // ── Replace expressions with sentinels, then JSON.parse once ──

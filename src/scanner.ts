@@ -14,6 +14,8 @@ export interface ScannedExpr {
   length: number
   /** Parsed variable name */
   name: string
+  /** Pre-split dotted path segments */
+  segments: string[]
   /** Raw default text after `:-`, if present */
   defaultValue?: string
   /** Whether the `${` was inside a JSON string */
@@ -102,7 +104,7 @@ export function scan(template: string): ScannedExpr[] {
         throw new TemplateParseError(`Invalid variable name "${name}"`, start + 2);
       }
 
-      exprs.push({ offset: start, length: pos - start, name, defaultValue, inString: wasInString });
+      exprs.push({ offset: start, length: pos - start, name, segments, defaultValue, inString: wasInString });
       continue;
     }
 
