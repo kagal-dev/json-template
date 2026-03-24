@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- **ci**: Node.js compatibility matrix (18, 20, 22) with standalone
+  compat test validating the `engines.node` claim
+
 ## [0.1.1] - 2026-03-24
 
 ### Added
