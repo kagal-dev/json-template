@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-03-24
+
+### Added
+
+- **ci**: Node.js compatibility matrix (18, 20, 22) with standalone
+  compat test validating the `engines.node` claim
+- **pkg**: `homepage`, `bugs`, and `keywords` fields for npm discovery
+
+### Changed
+
+- **pkg**: Remove redundant top-level `main`, `module`, and `types` —
+  `exports` map is the single source of truth
+
 ## [0.1.1] - 2026-03-24
 
 ### Added
