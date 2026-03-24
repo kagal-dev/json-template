@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-03-24
+
 ### Added
 
 - **ci**: Node.js compatibility matrix (18, 20, 22) with standalone
