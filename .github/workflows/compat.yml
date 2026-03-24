@@ -23,4 +23,4 @@ jobs:
       - name: Build
         run: pnpm build
       - name: Compat test
-        run: node src/__tests__/compat.mjs
+        run: pnpm test:compat

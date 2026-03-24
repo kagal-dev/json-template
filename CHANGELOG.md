@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Changed
+
+- **deps**: Bump `@poupe/eslint-config` ~0.8.3 → ^0.8.4 — remove
+  local `arrow-parens` override now enforced upstream
+- **ci**: Use `pnpm test:compat` script in compat workflow
+
 ## [0.1.2] - 2026-03-24
 
 ### Added

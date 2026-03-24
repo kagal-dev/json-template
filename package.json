@@ -38,6 +38,7 @@
     "prepare": "cross-test -s dist/index.mjs || unbuild --stub",
     "publint": "publint",
     "test": "vitest run",
+    "test:compat": "node src/__tests__/compat.mjs",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit"
   },
