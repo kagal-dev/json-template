@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.1.3] - 2026-03-25
+
+### Added
+
+- **ci**: Renovate configuration with config validator workflow
+
 ### Changed
 
 - **deps**: Bump `@poupe/eslint-config` ~0.8.3 → ^0.8.4 — remove
