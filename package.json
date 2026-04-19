@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@kagal/cross-test": "^0.1.2",
-    "@poupe/eslint-config": "^0.8.4",
+    "@poupe/eslint-config": "^0.9.1",
     "@types/node": "^20.19.37",
     "eslint": "^9.39.4",
     "npm-run-all2": "^8.0.4",
